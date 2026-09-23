@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Polityka prywatności — Cmentarz Centralny</title>
-  <meta name="description" content="Polityka prywatności aplikacji Cmentarz Centralny (CmentarzNav) do nawigacji po Cmentarzu Centralnym w Szczecinie.">
+  <title>Polityka prywatności — Cmentarz Centralny i Polpak SMS</title>
+  <meta name="description" content="Polityka prywatności aplikacji Cmentarz Centralny (CmentarzNav) i Polpak SMS.">
   <meta name="robots" content="index,follow">
   <style>
     :root {
@@ -61,6 +61,19 @@
       color: var(--muted);
       font-size: 0.95rem;
     }
+    html { scroll-padding-top: 1rem; }
+    .apps {
+      margin: 1rem 0 0;
+      padding: 0.7rem 0.85rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    .apps a { margin-right: 0.35rem; }
+    article.app {
+      margin-top: 2.25rem;
+      padding-top: 0.25rem;
+    }
     footer {
       margin-top: 2rem;
       color: var(--muted);
@@ -72,6 +85,16 @@
   <main>
     <header>
       <h1>Polityka prywatności</h1>
+      <p class="meta">Wydawca tych aplikacji. Kontakt: <a href="mailto:soczy@o2.pl">soczy@o2.pl</a></p>
+      <p class="apps">Aplikacje na tej stronie:
+        <a href="#cmentarz">Cmentarz Centralny</a> ·
+        <a href="#polpak-sms">Polpak SMS</a>
+      </p>
+    </header>
+
+    <article id="cmentarz" class="app">
+    <header>
+      <h1>Cmentarz Centralny</h1>
       <p class="meta">Aplikacja <strong>Cmentarz Centralny</strong> (CmentarzNav)</p>
       <p class="meta">Pakiet: pl.szczecin.cmentarz.nav</p>
       <p class="meta">Obowiązuje od 22 września 2026 r.</p>
@@ -174,6 +197,116 @@
       <h2>Privacy policy (English summary)</h2>
       <p>Cmentarz Centralny (package pl.szczecin.cmentarz.nav) is an Android walking guide for the Central Cemetery in Szczecin. There is no account, no ads and no analytics. Precise location is used on the device for navigation and is not streamed to the publisher. Saved places (title, note, coordinates) stay on the phone unless you explicitly share the list. Sharing uploads that list to the publisher’s server at bko.prov.cloudns.cx, where anyone with the code or link can download it. Grave search sends the name and optional dates you type to the public registry at cmentarze.szczecin.pl. Map tiles are loaded from OpenFreeMap; path geometry is loaded from OpenStreetMap Overpass for a fixed area around the cemetery. The app may contact the publisher’s server to check for and download an update. Contact: soczy@o2.pl. You may request deletion of a shared list by email, quoting its code. This summary is for convenience; the Polish text above is the binding policy. Effective 22 September 2026.</p>
     </section>
+    </article>
+
+    <article id="polpak-sms" class="app">
+    <header>
+      <h1>Polpak SMS</h1>
+      <p class="meta">Aplikacja <strong>Polpak SMS</strong></p>
+      <p class="meta">Pakiet: com.example.polpaksms</p>
+      <p class="meta">Obowiązuje od 23 września 2026 r.</p>
+    </header>
+
+    <section>
+      <h2>1. Kto odpowiada za aplikację</h2>
+      <p>Wydawcą aplikacji jest osoba prywatna prowadząca ten projekt. Kontakt w sprawach danych i tej polityki: <a href="mailto:soczy@o2.pl">soczy@o2.pl</a>.</p>
+      <p>Polpak SMS to narzędzie serwisowe: wysyła komendy SMS na bramkę Orange DSRB (numer 1473), pokazuje odpowiedzi oraz pomaga połączyć się z urządzeniem MikroTik w lokalnej sieci (skan naklejki, Wi‑Fi, SSH). Nie zakładasz w niej konta i nie logujesz się do usług wydawcy.</p>
+    </section>
+
+    <section>
+      <h2>2. Czego aplikacja nie robi</h2>
+      <ul>
+        <li>nie wyświetla reklam i nie używa identyfikatora reklamowego,</li>
+        <li>nie ma analityki ani narzędzi do śledzenia zachowań,</li>
+        <li>nie sprzedaje danych i nie przekazuje ich sieciom reklamowym,</li>
+        <li>nie wysyła treści SMS-ów ani haseł z naklejki na serwer wydawcy,</li>
+        <li>nie czyta kontaktów, zdjęć galerii ani listy zainstalowanych aplikacji.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. SMS</h2>
+      <p>Po Twojej zgodzie aplikacja może wysyłać SMS-y, odbierać je i czytać. Służy to wyłącznie obsłudze bramki <strong>1473</strong>: wysyłasz komendę (wraz z identyfikatorem SEAIS, który wpiszesz) i czekasz na zwrotną wiadomość od operatora. Aplikacja filtruje wiadomości od tej bramki, żeby pokazać wynik na ekranie.</p>
+      <p>Treść SMS-a idzie przez sieć operatora komórkowego, tak jak przy zwykłej wiadomości. Wydawca nie otrzymuje kopii SMS-ów na swoim serwerze. Numer 1473 i treść komendy są związane z usługą DSRB Orange, według zasad operatora.</p>
+      <p>Zgody SMS możesz cofnąć w ustawieniach Androida. Bez nich wysyłka i odbiór odpowiedzi nie zadziałają.</p>
+      <p>Podstawa: zgoda (art. 6 ust. 1 lit. a RODO) oraz wykonanie funkcji, której żądasz, wysyłając komendę (art. 6 ust. 1 lit. b RODO).</p>
+    </section>
+
+    <section>
+      <h2>4. Kamera i naklejka</h2>
+      <p>Po zgodzie na kamerę aplikacja skanuje naklejkę MikroTika (kod 2D albo numer seryjny). Z obrazu, na telefonie, odczytuje m.in. numer seryjny, dane Wi‑Fi oraz — gdy są na naklejce — login i hasło urządzenia.</p>
+      <p>Obraz z kamery nie jest wysyłany na serwer wydawcy. Odczytane dane zostają w polach formularza na czas pracy z urządzeniem. Hasło z naklejki możesz świadomie wysłać na tablet‑kiosk w tej samej sieci Wi‑Fi (punkt 6).</p>
+      <p>Możesz wpisać numer ręcznie i nie nadawać zgody na kamerę.</p>
+    </section>
+
+    <section>
+      <h2>5. Lokalizacja i Wi‑Fi</h2>
+      <p>Android wymaga zgody na lokalizację (a na nowszych systemach — na pobliskie urządzenia) do skanowania i łączenia z siecią Wi‑Fi. Aplikacja używa tego wyłącznie po to, by znaleźć sieć MikroTika, połączyć telefon z jego Wi‑Fi i dalej pracować w LAN.</p>
+      <p>Wydawca nie zapisuje Twojej pozycji GPS na serwerze. Możesz odmówić zgody; wtedy łączenie z Wi‑Fi z listy sieci może być niedostępne, a reszta funkcji (np. SMS) nadal działa.</p>
+      <p>Podstawa: zgoda (art. 6 ust. 1 lit. a RODO) oraz wykonanie połączenia z urządzeniem, którego żądasz (art. 6 ust. 1 lit. b RODO).</p>
+    </section>
+
+    <section>
+      <h2>6. Sieć lokalna, SSH i kiosk</h2>
+      <p>W sieci MikroTika aplikacja może wykrywać urządzenie (MNDP), łączyć się przez SSH pod adresem takim jak 10.0.0.1 i wykonywać komendy diagnostyczne, które sam uruchomisz (m.in. rekonesans, sygnał LTE).</p>
+      <p>Login i hasło SSH wpisujesz albo odczytujesz z naklejki. Zostają na telefonie na czas sesji i nie są wysyłane do internetu przez wydawcę.</p>
+      <p>Ukryta funkcja „hasło na kiosk” po Twoim przytrzymaniu kafelka i skanie naklejki rozgłasza w lokalnej sieci Wi‑Fi (UDP) login i hasło na tablet z aplikacją kiosku. To świadoma czynność w Twojej sieci; pakiet nie idzie na serwer wydawcy.</p>
+    </section>
+
+    <section>
+      <h2>7. Ustawienia na telefonie</h2>
+      <p>Aplikacja zapisuje lokalnie, w prywatnych preferencjach Androida, m.in. tryb ciemny i układ kart na ekranie głównym. Kopia zapasowa Androida jest w aplikacji wyłączona (<em>allowBackup=false</em>), więc te ustawienia nie trafiają do kopii konta Google przez tę aplikację.</p>
+    </section>
+
+    <section>
+      <h2>8. Sprawdzenie aktualizacji</h2>
+      <p>Aplikacja może połączyć się z serwerem wydawcy (<a href="https://bko.prov.cloudns.cx">bko.prov.cloudns.cx</a>), żeby porównać numer wersji i — gdy zdecydujesz się pobrać aktualizację — ściągnąć plik instalacyjny. Przy takim połączeniu serwer może odnotować techniczny zapis (adres IP, czas, identyfikator przeglądarki aplikacji). Połączenie nie zawiera treści SMS-ów ani haseł z naklejki.</p>
+    </section>
+
+    <section>
+      <h2>9. Komu dane mogą być przekazane</h2>
+      <ul>
+        <li>operator komórkowy — treść SMS-a na 1473 i ewentualna odpowiedź,</li>
+        <li>urządzenie MikroTik w Twojej sieci — sesja SSH i komendy, które uruchomisz,</li>
+        <li>kiosk w tej samej sieci Wi‑Fi — tylko gdy sam wyślesz hasło z naklejki,</li>
+        <li>serwer wydawcy — tylko przy sprawdzeniu i pobraniu aktualizacji,</li>
+        <li>Google — jeśli korzystasz ze Sklepu Play albo usług systemowych Androida.</li>
+      </ul>
+      <p>Serwer aktualizacji może znajdować się poza miejscem, w którym jesteś. Połączenie następuje tylko po to, by sprawdzić albo pobrać wersję.</p>
+    </section>
+
+    <section>
+      <h2>10. Jak długo dane są przechowywane</h2>
+      <ul>
+        <li>treść SMS-a i odpowiedź — na telefonie, w systemie wiadomości operatora, według Twojej skrzynki SMS; wydawca ich nie archiwizuje,</li>
+        <li>odczyt z naklejki i hasła SSH — w polach aplikacji do zamknięcia ekranu albo wyjścia z sesji,</li>
+        <li>ustawienia wyglądu — do odinstalowania aplikacji,</li>
+        <li>log połączenia przy aktualizacji — według technicznych logów serwera, bez treści SMS i haseł.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>11. Twoje prawa</h2>
+      <p>Możesz żądać dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz przeniesienia, a także wnieść sprzeciw, gdy podstawą jest prawnie uzasadniony interes. Zgody (SMS, kamera, lokalizacja) cofasz w ustawieniach Androida.</p>
+      <p>Skargę możesz złożyć do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stanisława Moniuszki 1A, 00-014 Warszawa, <a href="https://uodo.gov.pl">uodo.gov.pl</a>.</p>
+      <p>Pytania: <a href="mailto:soczy@o2.pl">soczy@o2.pl</a>.</p>
+    </section>
+
+    <section>
+      <h2>12. Dzieci</h2>
+      <p>Aplikacja jest narzędziem serwisowym i nie jest skierowana do dzieci. Nie zbiera świadomie danych od osób poniżej 16. roku życia.</p>
+    </section>
+
+    <section>
+      <h2>13. Zmiany tej polityki</h2>
+      <p>Aktualna treść jest zawsze pod tym adresem. Data przy nazwie aplikacji oznacza początek obowiązywania danej wersji. Dalsze korzystanie z aplikacji po publikacji nowej wersji oznacza, że masz do niej dostęp przed kolejnym użyciem funkcji, które wysyłają dane poza telefon.</p>
+    </section>
+
+    <section class="en" lang="en">
+      <h2>Privacy policy (English summary)</h2>
+      <p>Polpak SMS (package com.example.polpaksms) is a technician Android app: it sends and reads SMS to/from Orange DSRB short code 1473, and helps connect to a MikroTik on the local network (sticker scan, Wi‑Fi, SSH). There is no account, no ads and no analytics. SMS content goes through the mobile operator, not to the publisher’s server. Camera is used on-device to read a MikroTik sticker (serial, Wi‑Fi and optional login password). Location / nearby-device permission is used only because Android requires it to scan and join Wi‑Fi. Login credentials stay on the phone; you may optionally broadcast them over local Wi‑Fi UDP to a kiosk tablet. The app may contact bko.prov.cloudns.cx to check for and download an update. Contact: soczy@o2.pl. This summary is for convenience; the Polish text above is the binding policy. Effective 23 September 2026.</p>
+    </section>
+    </article>
 
     <footer>
       <p>Pytania: <a href="mailto:soczy@o2.pl">soczy@o2.pl</a></p>
